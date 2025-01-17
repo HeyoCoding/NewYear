@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>설날 운세 보기</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="logo">
+        <img src="logo.png" alt="로고 이미지">
+    </div>
+    <div class="container" id="form-container">
+        <h1>설날 운세 보기</h1>
+        <form id="fortuneForm">
+            <label for="name">이름:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="year">출생 연도:</label>
+            <input type="number" id="year" name="year" required>
+
+            <label for="month">출생 월:</label>
+            <input type="number" id="month" name="month" required>
+
+            <label for="day">출생 일:</label>
+            <input type="number" id="day" name="day" required>
+
+            <button type="submit">운세 보기</button>
+        </form>
+    </div>
+
+    <div class="container" id="result-container" style="display: none;">
+        <h1>당신의 운세</h1>
+        <div class="result" id="result"></div>
+        <button id="restartButton">다시 보기</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
